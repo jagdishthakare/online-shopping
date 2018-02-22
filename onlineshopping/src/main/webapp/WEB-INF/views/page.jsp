@@ -23,6 +23,10 @@
 
 <title>Online Shopping - ${title}</title>
 
+<script>
+	window.menu = '${title}';
+</script>
+
 <!-- Bootstrap core CSS -->
 <link
 	href="https://blackrockdigital.github.io/startbootstrap-shop-homepage/vendor/bootstrap/css/bootstrap.min.css"
@@ -69,6 +73,11 @@
 		src="https://blackrockdigital.github.io/startbootstrap-shop-homepage/vendor/jquery/jquery.min.js"></script>
 	<script
 		src="https://blackrockdigital.github.io/startbootstrap-shop-homepage/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		
+		
+	<!-- Self coded javascript  -->
+
+	<script src="${js}/myapp.js"></script>
 
 
 </body>
