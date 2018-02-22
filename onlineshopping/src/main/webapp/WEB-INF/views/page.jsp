@@ -29,57 +29,61 @@
 
 <!-- Bootstrap core CSS -->
 <link
-	href="https://blackrockdigital.github.io/startbootstrap-shop-homepage/vendor/bootstrap/css/bootstrap.min.css"
+	href="${css}/bootstrap.min.css"
 	rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link
-	href="https://blackrockdigital.github.io/startbootstrap-shop-homepage/css/shop-homepage.css"
+	href="${css}/myapp.css"
 	rel="stylesheet">
 
 </head>
 
 <body>
 
+	<div class="wrapper">
 
-	<!-- Navigation -->
-	<%@include file="./shared/navbar.jsp"%>
-
-
-	<!-- Page Content -->
-	<!-- Loading the home content -->
-	
-	<c:if test="${userClickHome == true }">
-		<%@include file="home.jsp"%>
-	</c:if>
-
-	<!-- Load only when user clicks about -->
-	<c:if test="${userClickAbout == true }">
-		<%@include file="about.jsp"%>
-	</c:if>
-	
-	<!-- Load only when user clicks contact -->
-	<c:if test="${userClickContact == true }">
-		<%@include file="contact.jsp"%>
-	</c:if>
-	
-
-	<!-- Footer -->
-	<%@include file="./shared/footer.jsp"%>
+		<!-- Navigation -->
+		<%@include file="./shared/navbar.jsp"%>
 
 
-	<!-- Bootstrap core JavaScript -->
-	<script
-		src="https://blackrockdigital.github.io/startbootstrap-shop-homepage/vendor/jquery/jquery.min.js"></script>
-	<script
-		src="https://blackrockdigital.github.io/startbootstrap-shop-homepage/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!-- Page Content -->
+
+		<div class="content">
 		
-		
-	<!-- Self coded javascript  -->
+			<!-- Loading the home content -->
 
-	<script src="${js}/myapp.js"></script>
+			<c:if test="${userClickHome == true }">
+				<%@include file="home.jsp"%>
+			</c:if>
+
+			<!-- Load only when user clicks about -->
+			<c:if test="${userClickAbout == true }">
+				<%@include file="about.jsp"%>
+			</c:if>
+
+			<!-- Load only when user clicks contact -->
+			<c:if test="${userClickContact == true }">
+				<%@include file="contact.jsp"%>
+			</c:if>
+		</div>
+
+		<!-- Footer -->
+		<%@include file="./shared/footer.jsp"%>
 
 
+		<!-- Bootstrap core JavaScript -->
+		<script
+			src="${js}/jquery.js"></script>
+		<script
+			src="${js}/bootstrap.min.js"></script> 
+
+
+		<!-- Self coded javascript  -->
+
+		<script src="${js}/myapp.js"></script>
+
+	</div>
 </body>
 
 </html>

@@ -49,7 +49,7 @@
 					</a>
 				</div>
 
-				<div class="row">
+				<div class="row" style="margin-bottom: 40px">
 
 					<div class="col-lg-4 col-md-6 mb-4">
 						<div class="card h-100">
