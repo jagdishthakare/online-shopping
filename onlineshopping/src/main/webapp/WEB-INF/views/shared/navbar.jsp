@@ -9,11 +9,8 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 				
-				<!-- 	<li class="nav-item active">
-					<li class="nav-item "><a class="nav-link" href="#">Home
-					<span class="sr-only">(current)</span>
-					</a></li>   -->
-					
+					<li class="nav-item"id="home"><a class="nav-link" href="${contextRoot}/home">Home</a>
+					</li>
 					<li class="nav-item" id="about"><a class="nav-link" href="${contextRoot}/about">About</a>
 					</li>
 					<li class="nav-item" id="listProducts"><a class="nav-link" href="${contextRoot}/listProducts">View Products</a>
