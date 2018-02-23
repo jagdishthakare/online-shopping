@@ -31,6 +31,11 @@
 <link
 	href="${css}/bootstrap.min.css"
 	rel="stylesheet">
+	
+<!-- Bootstrap Readable theme -->	
+<link
+	href="${css}/bootstrap-readable-theme.css"
+	rel="stylesheet">	
 
 <!-- Custom styles for this template -->
 <link
