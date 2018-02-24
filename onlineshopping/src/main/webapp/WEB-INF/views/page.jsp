@@ -28,19 +28,13 @@
 </script>
 
 <!-- Bootstrap core CSS -->
-<link
-	href="${css}/bootstrap.min.css"
-	rel="stylesheet">
-	
-<!-- Bootstrap Readable theme -->	
-<link
-	href="${css}/bootstrap-readable-theme.css"
-	rel="stylesheet">	
+<link href="${css}/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Readable theme -->
+<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
-<link
-	href="${css}/myapp.css"
-	rel="stylesheet">
+<link href="${css}/myapp.css" rel="stylesheet">
 
 </head>
 
@@ -55,7 +49,7 @@
 		<!-- Page Content -->
 
 		<div class="content">
-		
+
 			<!-- Loading the home content -->
 
 			<c:if test="${userClickHome == true }">
@@ -71,6 +65,11 @@
 			<c:if test="${userClickContact == true }">
 				<%@include file="contact.jsp"%>
 			</c:if>
+
+			<!-- Load only when user clicks contact -->
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
 		</div>
 
 		<!-- Footer -->
@@ -78,10 +77,8 @@
 
 
 		<!-- Bootstrap core JavaScript -->
-		<script
-			src="${js}/jquery.js"></script>
-		<script
-			src="${js}/bootstrap.min.js"></script> 
+		<script src="${js}/jquery.js"></script>
+		<script src="${js}/bootstrap.min.js"></script>
 
 
 		<!-- Self coded javascript  -->

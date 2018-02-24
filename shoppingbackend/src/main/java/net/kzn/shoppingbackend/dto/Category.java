@@ -3,8 +3,6 @@ package net.kzn.shoppingbackend.dto;
 public class Category {
 
 	
-	
-	
 	public int getId() {
 		return id;
 	}
