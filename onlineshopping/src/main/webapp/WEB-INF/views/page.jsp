@@ -30,6 +30,8 @@
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
+
+
 <!-- Bootstrap Readable theme -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
 
@@ -66,7 +68,7 @@
 				<%@include file="contact.jsp"%>
 			</c:if>
 
-			<!-- Load only when user clicks contact -->
+			<!-- Load only when user clicks All Products -->
 			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
 				<%@include file="listProducts.jsp"%>
 			</c:if>
@@ -78,12 +80,13 @@
 
 		<!-- Bootstrap core JavaScript -->
 		<script src="${js}/jquery.js"></script>
-		<script src="${js}/bootstrap.min.js"></script>
-
+	 	<script src="${js}/bootstrap.bundle.min.js"></script>  
+    	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+		
 
 		<!-- Self coded javascript  -->
 
-		<script src="${js}/myapp.js"></script>
+		<script src="${js}/myapp.js"></script> 
 
 	</div>
 </body>
