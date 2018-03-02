@@ -78,11 +78,18 @@
 		<%@include file="./shared/footer.jsp"%>
 
 
-		<!-- Bootstrap core JavaScript -->
-		<script src="${js}/jquery.js"></script>
-	 	<script src="${js}/bootstrap.bundle.min.js"></script>  
-    	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
 		
+		<!-- jQuery -->
+		<script src="${js}/jquery.js"></script>
+		
+		<!-- Bootstrap core JavaScript -->
+	 	<script src="${js}/bootstrap.bundle.min.js"></script>
+	 	<script src="${js}/bootstrap.js"></script> 
+	 	<script src="${js}/bootstrap.min.js"></script> 
+   <!--   	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->  
+		
+		<!-- jQuery DataTable Plugin -->
+		<script src="${js}/jquery.dataTables.js"></script>
 
 		<!-- Self coded javascript  -->
 
