@@ -2,6 +2,10 @@ $(function(){
 	// solving the active menu problem
 	switch(menu){
 	
+	case 'Home':
+		$('#home').addClass('active');
+		break;
+	
 	case 'About Us':
 		$('#about').addClass('active');
 		break;
@@ -23,36 +27,64 @@ $(function(){
 	}
 	
 	// code for jquery datatable
-	// create a dataset
-	var products = [
-	                
-	                    ['1', 'ABC'],
-	                    ['2', 'SDS'],
-	                    ['3', 'DSD'],
-	                    ['4', 'THH'],
-	                    ['5', 'FGF'],
-	                    ['6', 'NBN'],
-	                    ['7', 'RTE'],
-	                    ['8', 'QWE']
-	                
-	                ];
+
 	
 	var $table = $('#productListTable');
 	
 	//execute the below code only where we have this table
 	if($table.length){
 		
-	//	console.log('Inside the table!');
+		console.log('Inside the table!');
 		
-		$table.DataTable( {
+		var jsonUrl = '';
+		if (window.categoryId === '') {
+			jsonUrl = window.contextRoot + '/json/data/all/products';
 			
-			lengthMenu: [[3,5,10,-1], ['3 Records', '5 Records', '10 Records', 'ALL']],
+			console.log('Inside the table true !');
+		} else {
+			jsonUrl = window.contextRoot + '/json/data/category/'+ window.categoryId +'/products';
+			
+			console.log('Inside the table f f!');
+		}
+
+		
+		
+		$table
+		        .DataTable( {
+			
+			lengthMenu: [ [3,5,10,-1], ['3 Records', '5 Records', '10 Records', 'ALL'] ],
 			pageLength: 5,
-			data: products
+			
+			ajax : {
+				url: jsonUrl,
+				dataSrc: ''
+			},
+			
+			coloumns : [
+			            
+			            {
+			            	data: 'name'
+			            		
+			            },
+			            
+			            {
+			            	data: 'brand'
+			            },
+			            {
+			            	data: 'unitPrice'
+			            },
+			            {
+			            	data: 'quantity'
+			            }
+			            
+			            ]
+			 
+			
+			
 		});
 		
 	}
 	
 	
 	
-})
+}) 

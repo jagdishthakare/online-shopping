@@ -25,15 +25,21 @@
 
 <script>
 	window.menu = '${title}';
+	
+	window.contextRoot = '${contextRoot}'
 </script>
 
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
-
-
 <!-- Bootstrap Readable theme -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+
+<!-- Bootstrap dataTable -->
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet"> 
+
+
+
 
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -69,7 +75,8 @@
 			</c:if>
 
 			<!-- Load only when user clicks All Products -->
-			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+			<c:if
+				test="${userClickAllProducts == true or userClickCategoryProducts == true}">
 				<%@include file="listProducts.jsp"%>
 			</c:if>
 		</div>
@@ -78,22 +85,28 @@
 		<%@include file="./shared/footer.jsp"%>
 
 
-		
+
 		<!-- jQuery -->
 		<script src="${js}/jquery.js"></script>
-		
+
 		<!-- Bootstrap core JavaScript -->
-	 	<script src="${js}/bootstrap.bundle.min.js"></script>
-	 	<script src="${js}/bootstrap.js"></script> 
-	 	<script src="${js}/bootstrap.min.js"></script> 
-   <!--   	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->  
-		
+		<script src="${js}/bootstrap.bundle.min.js"></script>
+		<script src="${js}/bootstrap.js"></script>
+		<script src="${js}/bootstrap.min.js"></script>
+		<!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
 		<!-- jQuery DataTable Plugin -->
-		<script src="${js}/jquery.dataTables.js"></script>
+	 	<script src="${js}/jquery.dataTables.js"></script> 
+	
+
+
+		<!-- DataTable Bootstrap Script  -->
+	<%-- 	<script src="${js}/dataTables.bootstrap.js"></script> --%>
+	
 
 		<!-- Self coded javascript  -->
 
-		<script src="${js}/myapp.js"></script> 
+		<script src="${js}/myapp.js"></script>
 
 	</div>
 </body>
