@@ -61,6 +61,18 @@ $(function(){
 			},
 			
 			columns : [
+			           
+			       	{
+						data : 'code',
+						bSortable : false,
+						mRender : function(data, type, row) {
+
+							return '<img src="' + window.contextRoot
+									+ '/resources/images/' + data
+									+ '.jpg" class="dataTableImg"/>';
+
+						}
+					},
 			            
 			            {
 			            	data: 'name'			            		
@@ -86,8 +98,8 @@ $(function(){
 			            	mRender: function(data, type, row) {
 			            		
 			            		var str = '';
-			            		str += '<a href="'+window.contextRoot+ '/show/'+data+'/product">View</a>';
-			            		str += '<a href="'+window.contextRoot+ '/cart/add/'+data+'/product">Add to Cart</a>';
+			            		str += '<a href="'+window.contextRoot+ '/show/'+data+'/product" class="btn btn-primary"><span class="glyphicon glyphicon-eye-open"></span></a> &#160;';
+			            		str += '<a href="'+window.contextRoot+ '/cart/add/'+data+'/product" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></a>';
 			            		
 			            		return str;
 			            		

@@ -30,19 +30,23 @@
 </script>
 
 <!-- Bootstrap core CSS -->
-<link href="${css}/bootstrap.min.css" rel="stylesheet">
+
+<%-- <link href="${css}/bootstrap.min.css" rel="stylesheet"> --%> 
+
 
 <!-- Bootstrap Readable theme -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- Bootstrap dataTable -->
 <link href="${css}/dataTables.bootstrap.css" rel="stylesheet"> 
 
 
-
-
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
+
+
 
 </head>
 
@@ -102,7 +106,7 @@
 
 		<!-- DataTable Bootstrap Script  -->
 	 <%-- 	<script src="${js}/dataTables.bootstrap.js"></script> --%> 
-	
+	 	 
 
 		<!-- Self coded javascript  -->
 
