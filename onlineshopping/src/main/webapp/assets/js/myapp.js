@@ -37,7 +37,7 @@ $(function(){
 		console.log('Inside the table!');
 		
 		var jsonUrl = '';
-		if (window.categoryId === '') {
+		if (window.categoryId == '') {
 			jsonUrl = window.contextRoot + '/json/data/all/products';
 			
 			console.log('Inside the table true !');
@@ -60,27 +60,43 @@ $(function(){
 				dataSrc: ''
 			},
 			
-			coloumns : [
+			columns : [
 			            
 			            {
-			            	data: 'name'
-			            		
+			            	data: 'name'			            		
 			            },
 			            
 			            {
 			            	data: 'brand'
 			            },
+			            
 			            {
-			            	data: 'unitPrice'
+			            	data: 'unitPrice',
+			            	mRender: function(data, type, row) {
+								return '&#8377; ' + data
+							}
 			            },
+			            
 			            {
 			            	data: 'quantity'
-			            }
+			            },
+			            
+			            {
+			            	data: 'id',
+			            	mRender: function(data, type, row) {
+			            		
+			            		var str = '';
+			            		str += '<a href="'+window.contextRoot+ '/show/'+data+'/product">View</a>';
+			            		str += '<a href="'+window.contextRoot+ '/cart/add/'+data+'/product">Add to Cart</a>';
+			            		
+			            		return str;
+			            		
+			            	}
+			            }		       
 			            
 			            ]
 			 
-			
-			
+						
 		});
 		
 	}

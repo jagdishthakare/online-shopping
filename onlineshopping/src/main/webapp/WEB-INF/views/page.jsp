@@ -101,7 +101,7 @@
 
 
 		<!-- DataTable Bootstrap Script  -->
-	<%-- 	<script src="${js}/dataTables.bootstrap.js"></script> --%>
+	 <%-- 	<script src="${js}/dataTables.bootstrap.js"></script> --%> 
 	
 
 		<!-- Self coded javascript  -->
