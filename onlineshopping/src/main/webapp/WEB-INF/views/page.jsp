@@ -100,7 +100,7 @@
 		<script src="${js}/jquery.js"></script>
 
 		<!-- Bootstrap core JavaScript -->
-		<script src="${js}/bootstrap.bundle.min.js"></script>
+		<%-- <script src="${js}/bootstrap.bundle.min.js"></script> --%>
 		<script src="${js}/bootstrap.js"></script>
 		<script src="${js}/bootstrap.min.js"></script>
 		<!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->

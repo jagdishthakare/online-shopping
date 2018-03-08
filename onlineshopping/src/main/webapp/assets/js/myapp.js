@@ -83,7 +83,7 @@ $(function(){
 			            {
 			            	data: 'unitPrice',
 			            	mRender: function(data, type, row) {
-								return '&#8377; ' + data
+								return '&#x20a8; ' + data
 							}
 			            },
 			            
