@@ -26,8 +26,8 @@ $(function(){
 		
 	}
 	
+	
 	// code for jquery datatable
-
 	
 	var $table = $('#productListTable');
 	
@@ -43,12 +43,10 @@ $(function(){
 			console.log('Inside the table true !');
 		} else {
 			jsonUrl = window.contextRoot + '/json/data/category/'+ window.categoryId +'/products';
-			
-			console.log('Inside the table f f!');
+
 		}
 
-		
-		
+				
 		$table
 		        .DataTable( {
 			
