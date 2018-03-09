@@ -25,29 +25,35 @@
 						</script>
 					
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="${contextRoot}/home">Home</a></li>
-							<li class="breadcrumb-item active">All Products</li>
+
+
+							<li><a href="${contextRoot}/home">Home</a></li>
+							<li class="active">All Products</li>
+
+
 						</ol>
 					</c:if>
-
-					<div class="col-lg-12">
-
-						<c:if test="${userClickCategoryProducts == true}">
-						
+					
+					
+					<c:if test="${userClickCategoryProducts == true}">
 						<script>
 							window.categoryId = '${category.id}';
 						</script>
-						
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="${contextRoot}/home">Home</a></li>
-								<li class="breadcrumb-item active">Category</li>
-								<li class="breadcrumb-item active">${category.name}</li>
-							</ol>
-						</c:if>
+					
+						<ol class="breadcrumb">
 
-					</div>
+
+							<li><a href="${contextRoot}/home">Home</a></li>
+							<li class="active">Category</li>
+							<li class="active">${category.name}</li>
+
+
+						</ol>
+					</c:if>
+					
 
 				</div>
+
 
 			</div>
 
