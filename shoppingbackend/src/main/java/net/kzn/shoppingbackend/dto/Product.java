@@ -125,6 +125,7 @@ public class Product {
 	}
 
 
+	// toString method for debugging
 
 	@Override
 	public String toString() {
