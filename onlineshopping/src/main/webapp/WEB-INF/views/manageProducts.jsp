@@ -1,3 +1,5 @@
+<%@taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
+
 <div class="container">
 
 	<div class="row">
@@ -16,7 +18,7 @@
 				
 				<!-- FORM ELEMENTS -->
 				
-					<form class="form-horizontal">
+					<sf:form class="form-horizontal" modelAttribute="product">
 						
 						<div class="form-group">
 							
@@ -24,9 +26,8 @@
 							
 							<div class="col-md-8">
 							
-								<input type="text" name="name" id="name" placeholder="Product Name" class="form-control" />
+								<sf:input type="text" path="name" id="name" placeholder="Product Name" class="form-control" />
 								
-								<em class="help-block">Please enter Product Name!</em>
 							</div>
 						</div>
 						
@@ -37,10 +38,59 @@
 							
 							<div class="col-md-8">
 							
-								<input type="text" name="brand" id="brand" placeholder="Brand Name" class="form-control" />
+								<sf:input type="text" path="brand" id="brand" placeholder="Brand Name" class="form-control" />
 								
-								<em class="help-block">Please enter Brand Name!</em>
 							</div>
+						</div>
+						
+						
+						<div class="form-group">
+							
+							<label class="control-label col-md-4" for="description">Product description: </label>
+							
+							<div class="col-md-8">
+							
+								<sf:textarea path="description" id="description" rows="4" placeholder="Write a description here.." class="form-control" />
+								
+							</div>
+						</div>
+						
+						
+						<div class="form-group">
+							
+							<label class="control-label col-md-4" for="unitPrice">Enter Unit Price: </label>
+							
+							<div class="col-md-8">
+							
+								<sf:input type="number" path="unitPrice" id="unitPrice" placeholder="Unit Price In Rs." class="form-control" />
+								
+							</div>
+						</div>
+						
+						
+						<div class="form-group">
+							
+							<label class="control-label col-md-4" for="quantity">Quantity Available: </label>
+							
+							<div class="col-md-8">
+							
+								<sf:input type="number" path="quantity" id="quantity" placeholder="Quantity Available" class="form-control" />
+								
+							</div>
+						</div>
+						
+						
+						<div class="form-group">
+							<label class="control-label col-md-4" for="categoryId">Select Category: </label>
+							<div class="col-md-8">
+							
+							<sf:select class="form-control" id="categoryId" path="categoryId" 
+								items="${categories}" 
+								itemLabel="name" 
+								itemValue="id"
+							/>
+							    							
+							</div>				
 						</div>
 						
 						
@@ -50,10 +100,18 @@
 							
 								<input type="submit" name="submit" id="submit" value="submit" class="btn btn-primary"/>
 								
+								<!-- Hidden fields for products -->
+								<sf:hidden path="id"/>
+								<sf:hidden path="code"/>
+								<sf:hidden path="supplierId"/>
+								<sf:hidden path="active"/>
+								<sf:hidden path="purchases"/>
+								<sf:hidden path="views"/>
+								
 							</div>
 						</div>
 						
-					</form>					
+					</sf:form>					
 				
 				</div>
 			</div>
