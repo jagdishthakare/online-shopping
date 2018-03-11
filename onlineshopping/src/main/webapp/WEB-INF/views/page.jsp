@@ -114,9 +114,12 @@
 	 	<script src="${js}/jquery.dataTables.js"></script> 
 	
 
-
 		<!-- DataTable Bootstrap Script  -->
-	 <%-- 	<script src="${js}/dataTables.bootstrap.js"></script> --%> 
+	    <%-- <script src="${js}/dataTables.bootstrap.js"></script> --%>
+	    
+	 
+	    <!-- Bootbox  -->
+	 	<script src="${js}/bootbox.min.js"></script> 
 	 	 
 
 		<!-- Self coded javascript  -->
