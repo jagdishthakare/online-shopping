@@ -182,6 +182,7 @@
 						<th>Id</th>
 						<th>&#160;</th>
 						<th>Name</th>
+						<th>Brand</th>
 						<th>Quantity</th>
 						<th>Unit Price</th>
 						<th>Activate</th>				
@@ -190,67 +191,12 @@
 				</thead>
 				
 				
-				<tbody>
-					<tr>
-						<td>4</td>
-						<td>
-							<img class="adminDataTableImg" src="${contextRoot}/resources/images/PRDMNO123PQRX.jpg"
-							alt="Macbook Pro"/>
-						</td>
-						<td>Macbook Pro</td>
-						<td>3</td>
-						<td>&#x20a8; 54000.00/-</td>
-						
-						<!-- Toggle switch -->
-						<td>
-							<label class="switch">
-								<input type="checkbox" checked="checked" value="4" />
-								<div class="slider"></div>
-							</label>
-						</td>
-						<td>
-						
-							<a href="${contextRoot}/manage/4/product" class="btn btn-warning">
-								<span class="glyphicon glyphicon-pencil"></span>
-							</a>
-						
-						</td>
-					</tr>
-					
-					<tr>
-						<td>4</td>
-						<td>
-							<img class="adminDataTableImg" src="${contextRoot}/resources/images/PRDMNO123PQRX.jpg"
-							alt="Macbook Pro"/>
-						</td>
-						<td>Macbook Pro</td>
-						<td>3</td>
-						<td>&#x20a8; 54000.00/-</td>
-						
-						<!-- Toggle switch -->
-						<td>
-							<label class="switch">
-								<input type="checkbox" value="4" />
-								<div class="slider"></div>
-							</label>
-						</td>
-						<td>
-						
-							<a href="${contextRoot}/manage/4/product" class="btn btn-warning">
-								<span class="glyphicon glyphicon-pencil"></span>
-							</a>
-						
-						</td>
-					</tr>
-					
-				</tbody>
-				
-				
 				<tfoot>
 					<tr>					
 						<th>Id</th>
 						<th>&#160;</th>
 						<th>Name</th>
+						<th>Brand</th>
 						<th>Quantity</th>
 						<th>Unit Price</th>
 						<th>Activate</th>				
