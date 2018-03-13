@@ -47,6 +47,9 @@
 <link href="${css}/myapp.css" rel="stylesheet">
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 </head>
 
@@ -105,7 +108,7 @@
 		<script src="${js}/jquery.js"></script>
 
 		<!-- Bootstrap core JavaScript -->
-		<%-- <script src="${js}/bootstrap.bundle.min.js"></script> --%>
+		<script src="${js}/bootstrap.bundle.min.js"></script>
 		<script src="${js}/bootstrap.js"></script>
 		<script src="${js}/bootstrap.min.js"></script>
 		<!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
@@ -116,6 +119,8 @@
 
 		<!-- DataTable Bootstrap Script  -->
 	    <%-- <script src="${js}/dataTables.bootstrap.js"></script> --%>
+	    
+	    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
 	    
 	 
 	    <!-- Bootbox  -->
