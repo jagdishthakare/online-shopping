@@ -250,7 +250,7 @@
 
 					<!-- Category Form -->
 
-					<sf:form class="form-horizontal" modelAttribute="category"
+					<sf:form id="categoryForm" class="form-horizontal" modelAttribute="category"
 						action="${contextRoot}/manage/category" method="POST">
 
 						<div class="form-group">
