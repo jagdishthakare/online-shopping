@@ -30,7 +30,7 @@ public class UserTestCase {
 	}
 
 	
-	@Test
+	/*@Test
 	public void testAdd() {
 		
 		user = new User() ;
@@ -89,10 +89,54 @@ public class UserTestCase {
 			
 			// add the shipping address
 			assertEquals("Failed to add the shipping address!", true, userDAO.addAddress(address));
-
 			
 		}
 		
+	}*/
+	
+	
+/*	@Test
+	public void testAdd() {	
+		user = new User() ;
+		user.setFirstName("Hrithik");
+		user.setLastName("Roshan");
+		user.setEmail("hr@gmail.com");
+		user.setContactNumber("1234512345");
+		user.setRole("USER");
+		user.setPassword("123456");
+	
+		if(user.getRole().equals("USER")) {
+			
+			// create a cart for this user
+			cart = new Cart();
+			
+			cart.setUser(user);
+			
+			// attach cart with the user
+			user.setCart(cart);
+			
+		}
+		
+		// add the user
+		assertEquals("Failed to add the user!", true, userDAO.addUser(user));			
 	}
+	*/
+	
+	@Test
+	public void testUpdateCart() {
+		
+		// fetch the user by its email
+		user = userDAO.getByEmail("hr@gmail.com");
+		
+		// get the cart of the user
+		cart = user.getCart();
+		
+		cart.setGrandTotal(5555);
+		
+		cart.setCartLines(2);
+		
+		assertEquals("Failed to update the cart!", true, userDAO.updateCart(cart));			
+	} 
+	
 	
 }
